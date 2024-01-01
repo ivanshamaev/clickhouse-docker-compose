@@ -1,0 +1,14 @@
+version: '3'
+services:
+  clickhouse-server:
+    image: yandex/clickhouse-server
+    ports:
+      - 8123:8123
+    volumes:
+      - ./users.xml:/etc/clickhouse-server/users.d/users.xml
+    networks:
+      - clickhouse_network
+
+networks:
+  clickhouse_network:
+    driver: bridge

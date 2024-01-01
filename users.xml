@@ -1,0 +1,21 @@
+<yandex>
+    <users>
+        <admin>
+            <password>admin_password</password>
+            <networks incl="networks" replace="replace">
+                <ip>::/0</ip>
+            </networks>
+            <profile>default</profile>
+            <quota>default</quota>
+            <access_management>1</access_management>
+        </admin>
+        <user_ro>
+            <password>user_ro_password</password>
+            <networks incl="networks" replace="replace">
+                <ip>::/0</ip>
+            </networks>
+            <profile>readonly</profile>
+            <quota>default</quota>
+        </user_ro>
+    </users>
+</yandex>
